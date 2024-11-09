@@ -1,0 +1,88 @@
+/*Ubuntu font*/
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu/Ubuntu-Regular.ttf);
+}
+
+body {
+    background-color: black;
+    color:#83858c;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*Zoom & hover animation*/
+.zoom {
+    transition: transform 0.5s ease-in-out;
+}
+
+.zoom:hover {
+    transform: scale(1.044);
+}
+
+/*Remove bullet point from list*/
+li::marker {
+  content: "";
+}
+
+/*Remove underline from link in list and footer*/
+li a{
+    color:#83858c;
+    text-decoration: none;
+}
+footer a{
+    color:#83858c;
+    text-decoration: none;
+}
+
+/*Make ul center and change font-size to be the same as p*/
+ul {
+    margin-left: -7.5%;
+    font-size: 20px;
+}
+
+/*make img inline with text*/
+.inlineText{
+    height: 1em;
+    vertical-align: middle;
+}
+
+/*Change font size for p, h1 and h2*/
+p{
+    font-size: 20px;
+}
+h2{
+    font-size: 30px;
+}
+h1{
+    font-size: 40px;
+}
+
+/*Add gradient to header*/
+header {
+  background-image: linear-gradient(to top, #000000, #310b36);
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Adds margin to header*/
+.has-header {
+  margin-top: 350px;
+}
+
+/*Add gradient to footer*/
+footer {
+  background-image: linear-gradient(to bottom, #000000, #310b36);
+  height: 100px;
+  padding: 20px;
+  text-align: center;
+}
+
+/*Special font-color*/
+.white-text{
+    color:#f5fbfd;
+}
+.light-blue-text{
+    color: #59a8d5;
+}
