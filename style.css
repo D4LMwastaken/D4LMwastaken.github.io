@@ -9,6 +9,7 @@ body {
     color:#83858c;
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
 }
 
 /*Zoom & hover animation*/
@@ -25,19 +26,9 @@ li::marker {
   content: "";
 }
 
-/*Remove underline from link in list and footer*/
-li a{
-    color:#83858c;
-    text-decoration: none;
-}
-footer a{
-    color:#83858c;
-    text-decoration: none;
-}
-
 /*Make ul center and change font-size to be the same as p*/
 ul {
-    margin-left: -7.5%;
+    margin-left: -10%;
     font-size: 20px;
 }
 
@@ -85,4 +76,10 @@ footer {
 }
 .light-blue-text{
     color: #59a8d5;
+}
+
+/*Remove link color and underline*/
+a{
+    text-decoration: none;
+    color: inherit;
 }
