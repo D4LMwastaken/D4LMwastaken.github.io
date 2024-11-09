@@ -10,6 +10,7 @@ body {
     text-align: center;
     font-family: 'Ubuntu', sans-serif;
     text-decoration: none;
+    overflow-x: hidden;
 }
 
 /*Zoom & hover animation*/
