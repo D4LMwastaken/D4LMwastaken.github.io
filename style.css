@@ -60,7 +60,7 @@ header {
 
 /*Adds margin to header*/
 .has-header {
-  margin-top: 350px;
+  margin-top: 400px;
 }
 
 /*Add gradient to footer*/
@@ -83,4 +83,21 @@ footer {
 a{
     text-decoration: none;
     color: inherit;
+}
+
+/*Style links in header so that they appear side by side*/
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
 }
