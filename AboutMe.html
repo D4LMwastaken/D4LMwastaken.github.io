@@ -1,15 +1,35 @@
+<!-- 
+  About Me page
+  Features:
+  - Performance optimized with resource hints
+  - Lazy loading for images
+  - Responsive design
+  - GPU-accelerated animations
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D4LM | About Me</title>
+
+    <!-- Performance optimizations: Preload critical resources -->
+    <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preload" href="photos/profile_picture.svg" as="image">
     <link rel="icon" href="photos/profile_picture.svg" type="image/x-icon">
+
+    <!-- SEO meta tags -->
     <meta name="description" content="Learn more about D4LM - Coder, Gamer, and Tech Enthusiast">
     <meta name="theme-color" content="#8b2f93">
+
+    <!-- Resource hints for faster GitHub connections -->
+    <link rel="dns-prefetch" href="https://github.com">
+    <link rel="preconnect" href="https://github.com">
 </head>
 <body>
+    <!-- Navigation header - Fixed position with blur effect -->
     <header>
         <nav>
             <ul>
@@ -20,34 +40,44 @@
     </header>
 
     <main class="has-header">
+        <!-- Hero section with profile information -->
         <section class="hero">
+            <!-- Profile image with GPU-accelerated zoom effect -->
             <img src="photos/profile_picture.svg" alt="D4LM's profile picture" class="zoom profile-image">
+            <!-- Gradient text with animation -->
             <h1 class="zoom">D4LM</h1>
             <h2 class="zoom">About Me</h2>
         </section>
 
+        <!-- About content section with role cards -->
         <section class="about-content">
+            <!-- Introduction card with animated tagline -->
             <div class="about-card project-card">
                 <p class="zoom tagline">I'm D4LM, a coder at day...</p>
                 <p class="zoom tagline">A gamer at night.</p>
             </div>
 
+            <!-- LHSCC role card with lazy-loaded image -->
             <div class="about-card project-card">
                 <p class="zoom">
-                    <img src="icons/LHSCC%20Logo.svg" alt="LHSCC Logo" class="inlineText">
+                    <!-- Lazy-loaded inline image -->
+                    <img src="icons/LHSCC%20Logo.svg" alt="LHSCC Logo" class="inlineText" loading="lazy">
                     Treasurer of LHSCC
                 </p>
             </div>
 
+            <!-- Golden Aleksei role card with lazy-loaded image -->
             <div class="about-card project-card">
                 <p class="zoom">
-                    <img src="icons/Golden%20Aleksei.webp" alt="Golden Aleksei Logo" class="inlineText">
+                    <!-- Lazy-loaded inline image -->
+                    <img src="icons/Golden%20Aleksei.webp" alt="Golden Aleksei Logo" class="inlineText" loading="lazy">
                     Coding Captain for Golden Aleksei at Largo High School
                 </p>
             </div>
         </section>
     </main>
 
+    <!-- Footer with attribution and gradient background -->
     <footer>
         <p class="zoom">Created by <a href="https://github.com/D4LMwastaken">D4LM</a><br>
         Images and photos not owned by D4LM reserved under their respective owners or organizations.</p>
