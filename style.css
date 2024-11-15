@@ -145,7 +145,7 @@ p {
     margin: 0 auto;
 }
 
-/* Project card styling with hover effects */
+/* Project card styling */
 .project-card {
     background: linear-gradient(145deg, var(--theme-dark), var(--theme-darker));
     border: 1px solid rgba(139,47,147,0.1);
@@ -154,6 +154,29 @@ p {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    color: var(--theme-light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Card hover effect */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, rgba(139,47,147,0.1));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.project-card:hover::before {
+    opacity: 1;
 }
 
 .project-card:hover {
@@ -170,6 +193,15 @@ p {
     filter: drop-shadow(0 0 5px rgba(139,47,147,0.3));
 }
 
+/* Card text styling */
+.project-card span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--theme-light);
+    margin-top: 1rem;
+}
+
 /* Performance-optimized animations */
 .zoom {
     transition: transform 0.3s ease;
@@ -179,6 +211,18 @@ p {
 
 .zoom:hover {
     transform: scale(1.05);
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 2rem 0;
 }
 
 /* Footer styling */
@@ -201,11 +245,17 @@ footer {
     text-align: left;
 }
 
-/* Utility classes */
-.white-text { color: #f5fbfd; }
-.light-blue-text { color: #59a8d5; }
+/* List styles */
+ul {
+    margin-left: -10%;
+    font-size: 20px;
+}
 
-/* Inline image styles */
+li::marker {
+    content: "";
+}
+
+/* Inline text styles */
 .inlineText {
     height: 1.5em;
     vertical-align: middle;
@@ -213,8 +263,9 @@ footer {
     border-radius: 4px;
 }
 
-/* Remove list styles */
-li::marker { content: ""; }
+/* Utility classes */
+.white-text { color: #f5fbfd; }
+.light-blue-text { color: #59a8d5; }
 
 /* Responsive design */
 @media (max-width: 768px) {
