@@ -6,24 +6,25 @@
   - Responsive design
 -->
 <!DOCTYPE html>
+
 <html lang="en-us">
   <head>
     <!-- Character encoding and viewport settings -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D4LM | Coder at day, gamer at night</title>
+    <title>D4LM | A Coder and Student at day, a Gamer and Hacker at night!</title>
 
     <!-- Performance optimizations: Preload critical resources -->
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preload" href="photos/profile_picture.webp" as="image">
-    <link rel="icon" href="photos/profile_picture.webp" type="image/x-icon">
+    <link rel="icon" href="photos/profile_picture.webp" type="image/webp">
 
     <!-- SEO and verification meta tags -->
     <meta name="google-site-verification" content="Jkz5NVDdtH-flgqHf31koxTQO0Vccs3ZJaEd9FNb07Y">
     <meta name="msvalidate.01" content="EF8DDE41FFE90F9E2692E0222532A070">
-    <meta name="description" content="D4LM - Where coding meets gaming. Explore my projects and achievements.">
-    <meta name="theme-color" content="#FF0000">
+    <meta name="description" content="D4LM - My personal portfollio website, A Coder and Student at day, a Gamer and Hacker at night!">
+    <meta name="theme-color" content="#8b2f93">
 
     <!-- Resource hints for faster GitHub connections -->
     <link rel="dns-prefetch" href="https://github.com">
@@ -35,9 +36,26 @@
     <header>
       <nav>
         <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="AboutMe.html" class="nav-link">About Me</a></li>
-          <li><a href="https://d4lmwastaken.github.io/LHSCC-Discord-Bot/" class="nav-link">LHSCC Discord Bot</a></li>
+            <!--Home tab-->
+            <li>
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+          
+            <!--About Me Tab-->
+            <li>
+                <a href="AboutMe.html" class="nav-link">
+                    About Me!
+                </a>
+            </li>
+            
+            <!--Link to my Discord Bot website-->
+            <li>
+                <a href="https://d4lmwastaken.github.io/LHSCC-Discord-Bot/" class="nav-link">
+                    D4LM's Discord Bot
+                </a>
+            </li>
         </ul>
       </nav>
     </header>
@@ -45,10 +63,10 @@
     <main class="has-header">
       <!-- Hero section with profile information and tagline -->
       <section class="hero">
-        <img src="photos/profile_picture.webp" alt="D4LM's profile picture" class="zoom profile-image">
+        <img src="icons/D4LM Logo.svg" alt="D4LM's profile picture" class="zoom profile-image">
         <h1 class="zoom">D4LM</h1>
-        <p class="zoom tagline">A coder at day</p>
-        <p class="zoom tagline">A gamer at night</p>
+        <p class="zoom tagline">A Coder and Student at day!</p>
+        <p class="zoom tagline">A Gamer and Hacker at night!</p>
       </section>
 
       <!-- Projects grid section with lazy-loaded images -->
@@ -57,32 +75,32 @@
         <div class="projects-grid">
           <!-- LHSCC Discord Bot -->
           <a href="https://d4lmwastaken.github.io/LHSCC-Discord-Bot/" class="project-card zoom">
-            <img src="icons/LHSCC%20Logo.svg" alt="LHSCC Logo" loading="lazy">
-            <span>LHSCC Discord Bot</span>
+            <img src="icons/LHSCC Logo.svg" alt="LHSCC Logo" loading="lazy" class="LHSCC_Logo">
+            <span>Largo High School Coding Club Discord Bot</span>
           </a>
 
           <!-- Personal Website -->
           <a href="https://github.com/D4LMwastaken/D4LMwastaken.github.io" class="project-card zoom">
-            <img src="photos/profile_picture.webp" alt="D4LM Logo" loading="lazy">
-            <span>Personal Website</span>
+            <img src="icons/D4LM Logo.svg" alt="D4LM Logo" loading="lazy">
+            <span>My portfolio/personal website</span>
           </a>
 
-          <!-- Local AI Project -->
-          <a href="https://github.com/D4LMwastaken/Local-AI" class="project-card zoom">
-            <img src="icons/Python-logo.svg" alt="Python logo" loading="lazy">
-            <span>Local AI</span>
+          <!-- USB A Hub -->
+          <a href="https://github.com/D4LMwastaken/USB-A-Hub" class="project-card zoom">
+            <img src="icons/D4LM Logo.svg" alt="D4LM Logo" loading="lazy">
+            <span>USB-A Hub that I made</span>
           </a>
 
           <!-- Calculator Project -->
-          <a href="https://github.com/D4LMwastaken/Calculator" class="project-card zoom">
+          <a href="https://github.com/D4LMwastaken/Hello" class="project-card zoom">
             <img src="icons/Python-logo.svg" alt="Python logo" loading="lazy">
-            <span>Calculator</span>
+            <span>Hello (Nominee for Largo High School Coding Club's first Hackathon)</span>
           </a>
 
           <!-- LHSCC Website -->
-          <a href="https://LHSCoding.github.io" class="project-card zoom">
+          <a href="https://largo.hackclub.com" class="project-card zoom">
             <img src="icons/LHSCC%20Logo.svg" alt="LHSCC Logo" loading="lazy">
-            <span>LHSCC Website</span>
+            <span>Largo High School Coding Club's Website</span>
           </a>
 
           <!-- Golden Aleksei Website -->
@@ -102,8 +120,9 @@
 
     <!-- Footer with attribution -->
     <footer>
-      <p class="zoom">Created by <a href="https://github.com/D4LMwastaken">D4LM</a><br>
-        Images and photos not owned by <a href="https://github.com/D4LMwastaken">D4LM</a> reserved under their respective owners or organizations.</p>
+      <p class="zoom">Created by <a href="https://github.com/D4LMwastaken">D4LM</a></p>
+      <p class="zoom"> Images and photos not owned by <a href="https://github.com/D4LMwastaken">D4LM</a> reserved under their respective owners or organizations.</p>
+      <p class="zoom">Website is made under <a href="LICENSE">Mozilla Public License</a></p>
     </footer>
   </body>
 </html>

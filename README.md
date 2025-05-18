@@ -22,11 +22,14 @@ A modern, performance-optimized portfolio website showcasing my projects and ski
 ## Project Structure
 ```
 .
-├── index.html          # Home page with project showcase
-├── AboutMe.html        # About me page with personal info
+├── index.html         # Home page with project showcase
+├── AboutMe.html       # About me page with personal info
+├── 404.html           # Placeholder for pages that don't exist yet
 ├── style.css          # Shared styles and animations
 ├── photos/            # Image assets
 ├── icons/             # Icon assets
+├── fonts/             # Font assets
+├── LICENSE            # License for the project
 └── README.md          # Project documentation
 ```
 

@@ -1,81 +1,129 @@
 <!-- 
-  About Me page
+  Main portfolio page
   Features:
   - Performance optimized with resource hints
   - Lazy loading for images
   - Responsive design
 -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
+
+<html lang="en-us">
+  <head>
     <!-- Character encoding and viewport settings -->
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D4LM | About Me</title>
+    <title>D4LM | A Coder and Student at day, a Gamer and Hacker at night!</title>
 
     <!-- Performance optimizations: Preload critical resources -->
     <link rel="preload" href="style.css" as="style">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="preload" href="photos/profile_picture.webp" as="image">
-    <link rel="icon" href="photos/profile_picture.webp" type="image/x-icon">
+    <link rel="icon" href="photos/profile_picture.webp" type="image/webp">
 
-    <!-- SEO meta tags -->
-    <meta name="description" content="Learn more about D4LM - Coder, Gamer, and Tech Enthusiast">
+    <!-- SEO and verification meta tags -->
+    <meta name="google-site-verification" content="Jkz5NVDdtH-flgqHf31koxTQO0Vccs3ZJaEd9FNb07Y">
+    <meta name="msvalidate.01" content="EF8DDE41FFE90F9E2692E0222532A070">
+    <meta name="description" content="D4LM - My personal portfollio website, A Coder and Student at day, a Gamer and Hacker at night!">
     <meta name="theme-color" content="#8b2f93">
 
     <!-- Resource hints for faster GitHub connections -->
     <link rel="dns-prefetch" href="https://github.com">
     <link rel="preconnect" href="https://github.com">
-</head>
-<body>
+  </head>
+
+  <body>
     <!-- Navigation header - Fixed position with blur effect -->
     <header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="AboutMe.html" class="nav-link">About Me</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+            <!--Home tab-->
+            <li>
+                <a href="index.html" class="nav-link">
+                    Home
+                </a>
+            </li>
+          
+            <!--About Me Tab-->
+            <li>
+                <a href="AboutMe.html" class="nav-link">
+                    About Me!
+                </a>
+            </li>
+            
+            <!--Link to my Discord Bot website-->
+            <li>
+                <a href="https://d4lmwastaken.github.io/LHSCC-Discord-Bot/" class="nav-link">
+                    D4LM's Discord Bot
+                </a>
+            </li>
+        </ul>
+      </nav>
     </header>
 
     <main class="has-header">
-        <!-- Hero section with profile information -->
-        <section class="hero">
-            <img src="photos/profile_picture.webp" alt="D4LM's profile picture" class="zoom profile-image">
-            <h1 class="zoom">D4LM</h1>
-            <h2 class="zoom">About Me</h2>
-        </section>
+      <!-- Hero section with profile information and tagline -->
+      <section class="hero">
+        <img src="icons/D4LM Logo.svg" alt="D4LM's profile picture" class="zoom profile-image">
+        <h1 class="zoom">D4LM</h1>
+        <p class="zoom tagline">A Coder and Student at day!</p>
+        <p class="zoom tagline">A Gamer and Hacker at night!</p>
+      </section>
 
-        <!-- About content section with role cards -->
-        <section class="about-content">
-            <!-- Introduction card with tagline -->
-            <div class="about-card project-card">
-                <p class="zoom tagline">I'm D4LM, a coder at day...</p>
-                <p class="zoom tagline">A gamer at night.</p>
-            </div>
+      <!-- Projects grid section with lazy-loaded images -->
+      <section class="portfolio">
+        <h2 class="zoom">About Me!</h2>
+        <div class="projects-grid">
+          <!-- President of Largo High School Coding Club -->
+          <a href="https://largo.hackclub.com" class="project-card zoom">
+            <img src="icons/LHSCC Logo.svg" alt="LHSCC Logo" loading="lazy" class="LHSCC_Logo">
+            <span>President of Largo High School Coding Club!</span>
+          </a>
 
-            <!-- LHSCC role card with lazy-loaded image -->
-            <div class="about-card project-card">
-                <p class="zoom">
-                    <img src="icons/LHSCC%20Logo.svg" alt="LHSCC Logo" class="inlineText" loading="lazy">
-                    Treasurer of LHSCC
-                </p>
-            </div>
+          <!-- Fedora/Linux User -->
+          <a href="https://fedoraproject.org/kde/" class="project-card zoom">
+            <img src="icons/fedora.png" alt="Fedora Logo" loading="lazy">
+            <span>Fedora KDE Plasma User!</span>
+          </a>
 
-            <!-- Golden Aleksei role card with lazy-loaded image -->
-            <div class="about-card project-card">
-                <p class="zoom">
-                    <img src="icons/Golden%20Aleksei.svg" alt="Golden Aleksei Logo" class="inlineText" loading="lazy">
-                    Coding Captain for Golden Aleksei at Largo High School
-                </p>
-            </div>
-        </section>
+          <!-- Largo High School (icon has different aspect ratio...) -->
+          <a href="https://pcsb.org/largo-hs" class="project-card zoom">
+            <img src="icons/largohighschoologo.png" alt="Largo High School Logo" loading="lazy" style="width: 123px;">
+            <span>Student at Largo High School's IB Program!</span>
+          </a>
+
+          <!-- Birthday -->
+          <a href="404.html" class="project-card zoom">
+            <img src="icons/Birthday.png" alt="Birthday logo" loading="lazy">
+            <span>Currently 15 years old! Will be 16 on April 4th!</span>
+          </a>
+
+          <!-- Coding Captain for Big G -->
+          <a href="404.html" class="project-card zoom">
+            <img src="icons/D4LM Logo.svg" alt="Placeholder Logo" loading="lazy">
+            <span>Coding Captain for Big G!</span>
+          </a>
+
+          <!-- Golden Aleksei Member -->
+          <a href="https://golden-aleksei.github.io" class="project-card zoom">
+            <img src="icons/Golden%20Aleksei.svg" alt="Golden Aleksei Logo" loading="lazy">
+            <span>Member of Golden Aleksei!</span>
+          </a>
+          
+          <!-- PC Build List -->
+          <a href="https://github.com/D4LMwastaken/PC-Parts-List" class="project-card zoom">
+            <img src="icons/D4LM Logo.svg" alt="Golden Aleksei Logo" loading="lazy">
+            <span>Current list of parts for possible PC!</span>
+          </a>
+
+        </div>
+      </section>
     </main>
 
     <!-- Footer with attribution -->
     <footer>
-        <p class="zoom">Created by <a href="https://github.com/D4LMwastaken">D4LM</a><br>
-        Images and photos not owned by D4LM reserved under their respective owners or organizations.</p>
+      <p class="zoom">Created by <a href="https://github.com/D4LMwastaken">D4LM</a></p>
+      <p class="zoom"> Images and photos not owned by <a href="https://github.com/D4LMwastaken">D4LM</a> reserved under their respective owners or organizations.</p>
+      <p class="zoom">Website is made under <a href="LICENSE">Mozilla Public License</a></p>
     </footer>
-</body>
+  </body>
 </html>
