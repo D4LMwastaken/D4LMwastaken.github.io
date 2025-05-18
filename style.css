@@ -5,7 +5,7 @@
     --theme-accent: #b44bbd;
     --theme-dark: #320049;
     --theme-darker: #140035;
-    --theme-light: #faeefd;
+    --theme-light: #fcb6ef;
 }
 
 /* Base styles with dark theme and typography */
@@ -22,22 +22,22 @@ body {
 /* Fixed header with blur effect and gradient */
 header {
     background: linear-gradient(to bottom, rgba(26,26,26,0.95), rgba(49,11,54,0.95));
-    min-height: 60px;
-    padding: 10px;
+    min-height: 44px;
+    /*padding: 5px;*/
     text-align: center;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-    border-bottom: 2px solid var(--theme-primary);
+    border-bottom: 2.22px solid var(--theme-primary);
 }
 
 /* Navigation menu layout */
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 13px;
     display: flex;
     justify-content: center;
     gap: 2rem;
@@ -51,6 +51,7 @@ nav ul li a {
     letter-spacing: 1px;
     padding: 0.5rem 1rem;
     transition: color 0.3s ease;
+    font-size: 1.1em;
 }
 
 nav ul li a:hover {
@@ -59,8 +60,8 @@ nav ul li a:hover {
 
 /* Profile image with GPU-accelerated effects */
 .profile-image {
-    width: 200px;
-    height: 200px;
+    width: 555px;
+    height: 555px;
     filter: drop-shadow(0 0 10px var(--theme-primary));
     margin-top: 0;
     margin-bottom: 1rem;
@@ -70,7 +71,7 @@ nav ul li a:hover {
 
 /* Main content layout with performance optimization */
 .has-header {
-    margin-top: 100px;
+    margin-top: 44px;
     padding: 1rem;
     contain: content;
 }
@@ -79,7 +80,7 @@ nav ul li a:hover {
 @keyframes rgbGlow {
     0% { color: var(--theme-light); text-shadow: 0 0 10px var(--theme-primary); }
     25% { color: #b44bbd; text-shadow: 0 0 15px #b44bbd; }
-    50% { color: #8b2f93; text-shadow: 0 0 20px #8b2f93; }
+    50% { color: #46004f; text-shadow: 0 0 20px #46004f; }
     75% { color: #310b36; text-shadow: 0 0 15px #310b36; }
     100% { color: var(--theme-light); text-shadow: 0 0 10px var(--theme-primary); }
 }
@@ -93,7 +94,7 @@ nav ul li a:hover {
 
 /* Typography styles with gradient effects */
 h1 {
-    font-size: 3.5rem;
+    font-size: 4.44rem;
     margin-top: 0;
     margin-bottom: 1rem;
     background: linear-gradient(45deg, #fff, #59a8d5);
@@ -123,7 +124,7 @@ h2::after {
 
 /* Base text styles */
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8;
     margin: 1rem 0;
 }
@@ -187,11 +188,13 @@ p {
 
 /* Project card image styles */
 .project-card img {
-    width: 50px;
-    height: 50px;
+    width: 84px;
+    height: 84px;
     margin-bottom: 1rem;
     filter: drop-shadow(0 0 5px rgba(139,47,147,0.3));
 }
+
+
 
 /* Card text styling */
 .project-card span {
@@ -201,6 +204,7 @@ p {
     color: var(--theme-light);
     margin-top: 1rem;
 }
+
 
 /* Performance-optimized animations */
 .zoom {
@@ -228,7 +232,7 @@ a {
 /* Footer styling */
 footer {
     background: linear-gradient(to top, var(--theme-darker), var(--theme-dark));
-    padding: 2rem;
+    padding: 0.5rem;
     text-align: center;
     border-top: 2px solid var(--theme-primary);
 }
@@ -272,10 +276,14 @@ li::marker {
     /* Adjust spacing for mobile */
     .has-header { margin-top: 80px; }
     
+    /*Adjust profile picture size*/
+    .profile-image {width:333px; height: 333px;}
+    
     /* Reduce font sizes */
     h1 { font-size: 2.5rem; }
     h2 { font-size: 2rem; }
-    p { font-size: 1rem; }
+    FF p { font-size: 1rem; }
+    nav ul li a { font-size: .555em; ;}
     
     /* Stack grid items */
     .projects-grid {
