@@ -60,8 +60,8 @@ nav ul li a:hover {
 
 /* Profile image with GPU-accelerated effects */
 .profile-image {
-    width: 666px;
-    height: 666px;
+    width: 555px;
+    height: 555px;
     filter: drop-shadow(0 0 10px var(--theme-primary));
     margin-top: 0;
     margin-bottom: 1rem;
