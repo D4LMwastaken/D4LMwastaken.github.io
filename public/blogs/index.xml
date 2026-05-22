@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Blogs on D4LM&#39;s Portfolio</title>
+    <link>https://d4lmwastaken.github.io/blogs/</link>
+    <description>Recent content in Blogs on D4LM&#39;s Portfolio</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 22 May 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://d4lmwastaken.github.io/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Coming Soon!</title>
+      <link>https://d4lmwastaken.github.io/blogs/test/</link>
+      <pubDate>Fri, 22 May 2026 00:00:00 +0000</pubDate>
+      <guid>https://d4lmwastaken.github.io/blogs/test/</guid>
+      <description>&lt;h1 id=&#34;the-blog-is-coming-soon&#34;&gt;The blog is coming soon!&lt;/h1&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Yes, really!&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+    </item>
+  </channel>
+</rss>
