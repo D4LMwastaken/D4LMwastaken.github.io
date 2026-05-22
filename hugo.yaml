@@ -60,7 +60,7 @@ Menus:
 
 params:
   title: "D4LM's Portfolio"
-  description: Julian(D4LM)'s Portfolio
+  description: Julian (D4LM)'s Portfolio
   # staticPath: ""  # The path to serve the static files from
   favicon: "/fav.png"
 
@@ -134,7 +134,7 @@ params:
     enable: true
     intro: "Hi, my name is"
     title: "Julian(D4LM)."
-    subtitle: "Welcome to my portfolio website V2 now written in Hugo!"
+    subtitle: "Welcome to my portfolio website!"
     content: "I am a high school programmer with expertise in Web Development, Linux and Robotics. I am demonstrating leadership through leading FTC Team #18592 Golden Prodigies, the Largo Youth Leadership Council and more!"
     image: /images/hero.jpg
     bottomImage:
@@ -209,8 +209,8 @@ params:
               content: Leader of the team!
             featuredItems:
               customIcons:
-                - icon: # Golden Prodigies Logo
-                  url: # Golden Prodigies Website
+                - icon: /icons/GoldenProdigies.png
+                  url: htttps://GoldenProdigies.github.io
                   tooltip: Golden Prodigies Website
           - name: "Head Programmer"
             date: "August 2024-Present day"
@@ -219,15 +219,15 @@ params:
               content: Head Programmer of the team!
             featuredItems:
               customIcons:
-                - icon: # Kotlin logo
-                  url: # Kotlin's website
-                  tooltip: "Kotlin! The programming language my team is going to use!"
-                - icon: # NextFTC logo
-                  url: # NextFTC' website
-                  tooltip: "NextFTC! The programming library my team is going to use!"
-                - icon: # PedroPathing icon
-                  url: # PedroPathing website
-                  tooltip: "PedroPathing! The pathfinding libary that my team uses."
+                - icon: /icons/Kotlin.svg
+                  url: https://kotlinlang.org/
+                  tooltip: "Kotlin! The programming language I use for FTC!"
+                - icon: /icons/NextFTC.png
+                  url: https://nextftc.dev/
+                  tooltip: "NextFTC! The command framework that I use!"
+                - icon: /icons/PedroPathing.png
+                  url: https://pedropathing.com/
+                  tooltip: "PedroPathing! The pathfinding library that I use!"
       - company: "Largo Youth Leadership Council"
         jobs:
           - name: "Council Member"
@@ -239,7 +239,7 @@ params:
         jobs:
           - name: "Inventor"
             date: "August 2025-Present"
-            content: "Helped invent Phantom Eyes which I cannot describe until we agree to introduce it to the general public."
+            content: "Me and Libano, invented Phantom Eyes, a cosplay mask with animatronic eyes!"
             info:
               content: "Inventor!"
 
@@ -254,7 +254,7 @@ params:
           name: "Largo High School"
           url: "https://largo-hs.pcsb.org/"
         date: "August 2023 - Present"
-        GPA: "Currently 4.2308 out of 5.0"
+        GPA: "Currently 4.2264 out of 5.0"
         content: |-
           Attended IB Program!
           
@@ -269,75 +269,38 @@ params:
 
   # Achievements
   achievements:
-    enable: false # For now, I want to attempt to see...
+    enable: true
     # title: "Custom Name"
     items:
       - title: Portfolio Website V2
         content: This website!
         url: "https://d4lmwastaken.github.io"
-        image: /images/achievement.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievement.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievement.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+        image: /images/website.png
+      - title: Portfolio Website
+        content: My original website!
+        url: "https://github.com/D4LMwastaken/D4LMwastaken.github.io/tree/v1"
+        image: /images/old_website.png
 
   # projects
   projects:
-    enable: false # Going to be false, once I add this...
+    enable: true # Going to be false, once I add this...
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: Portfolio Website V2
+        content: My portfolio website!
+        image: /images/website.png
         featured:
-          name: Demo
-          link: https://hugo-profile.netlify.app
-        badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
-          - "Django"
-          - "Bootstrap"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
-
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
-        featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: Website
+          link: https://d4lmwastaken.github.io
         badges:
           - "Hugo"
           - "Bootstrap"
           - "Javascript"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/D4LMwastaken/D4LMwastaken.github.io
+
+
 
   #Contact
   contact:
@@ -362,11 +325,9 @@ params:
       enable: false
       disableFeaturedImage: false
     socialNetworks:
-      github: https://github.com
-      linkedin: https://linkedin.com
-      twitter: https://twitter.com
-      instagram: https://instagram.com
-      facebook: https://facebook.com
+      github: https://github.com/D4LMwastaken
+      linkedin: https://www.linkedin.com/in/julian-pan-5a34b7385/?skipRedirect=true
+      instagram: https://www.instagram.com/d4lmwastaken/
 
   # List pages like blogs and posts
   listPages:
