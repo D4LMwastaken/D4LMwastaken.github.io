@@ -1,0 +1,361 @@
+baseURL: "https://d4lmwastaken.github.io"
+languageCode: "en-us"
+title: "D4LM's Portfolio"
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main:
+    - identifier: blog
+      name: Blog
+      title: Blog posts
+      url: /blogs
+      weight: 1
+    - identifier: gallery
+      name: Gallery
+      title: Blog posts
+      url: /gallery
+      weight: 2
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: "D4LM's Portfolio"
+  description: Julian (D4LM)'s Portfolio
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    disableThemeToggle: true
+    defaultTheme: "dark" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+    darkmode:
+      textColor: "#f7f2f6"
+      secondaryTextColor: "#fce3f8"
+      textLinkColor: "#ffffff"
+      backgroundColor: "#140035"
+      secondaryBackgroundColor: "#b44bbd"
+      primaryColor: "#8b2f93"
+      secondaryColor: "#310b36"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    # brandLogo: "/logo.png" # Logo for the brand | default is the favicon variable
+    # showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: "D4LM's Portfolio" # Brand name for the brand | default is the title variable
+    disableSearch: false
+    # searchPlaceholder: "Search"
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: false
+      disableContact: false
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Hi, my name is"
+    title: "Julian(D4LM)."
+    subtitle: "Welcome to my portfolio website!"
+    content: "I am a high school programmer with expertise in Web Development, Linux and Robotics. I am demonstrating leadership through leading FTC Team #18592 Golden Prodigies, the Largo Youth Leadership Council and more!"
+    image: /images/hero.jpg
+    bottomImage:
+      enable: true
+    roundImage: true # Make hero image circular | default false
+    button:
+      enable: true
+      name: "Resume (coming soon...)"
+      url: "#"
+      download: true
+      newPage: true
+    socialLinks:
+      fontAwesomeIcons:
+        - icon: fab fa-github
+          url: https://github.com/D4LMwastaken
+        - icon: fab fa-instagram
+          url: https://www.instagram.com/d4lmwastaken/
+        - icon: fa-solid fa-globe
+          url: "https://d4lmwastaken.github.io/"
+
+  # About
+  about:
+    enable: true
+    title: "About Me"
+    image: "/images/me.jpg"
+    content: |-
+      I am a high school student with a passion for Linux, 
+
+      I am currently planning out how I want to lead my FTC Team, #18592 Golden Prodigies as there Team Captain and Head Programmer!
+      
+      I am currently programming my portfolio [website](https://d4lmwastaken.github.io/)!
+    skills:
+      enable: true
+      title: "Here are a things I have been playing with:"
+      items:
+        - "Fedora"
+        - "Hugo"
+        - "JetBrains"
+        - "Git"
+        - "C++"
+        - "Python"
+        - "Go"
+        - "Kotlin"
+        - "GPUs"
+        - "YOLO"
+
+  # Experience
+  experience:
+    enable: true
+    title: "Internships and Experiences"
+    items:
+      - company: "Lockheed Martin"
+        companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
+        jobs:
+          - name: "Applications Engineer Intern"
+            date: "June 2025-July 2026"
+            content: "I worked as an Application Engineer Intern at Lockheed Martin in Pinellas Park. I helped train and program their artifical intelligence model for segmenting and classifying F-35 Bulkheads to help their workers install tools in correct orientation and position."
+            info:
+              content: Working as an Applications Engineer Intern
+            featuredItems:
+              fontAwesomeIcons:
+                - icon: fa-solid fa-jet-fighter
+                  url: https://www.lockheedmartin.com/en-us/index.html
+                  tooltip: Lockheed Martin's website
+      - company: "#18592 Golden Prodigies"
+        companyURL: https://goldenprodigies.github.io/
+        jobs:
+          - name: "Team Captain"
+            date: "January 2025-Present day"
+            content: "Working as the team captain for our newly named team #18592 Golden Prodigies. Working right now on planning out how to make my team better so we can advance into the Florida State Championship!"
+            info:
+              content: Leader of the team!
+            featuredItems:
+              customIcons:
+                - icon: /icons/GoldenProdigies.png
+                  url: htttps://GoldenProdigies.github.io
+                  tooltip: Golden Prodigies Website
+          - name: "Head Programmer"
+            date: "August 2024-Present day"
+            content: "Worked as the head programmer for my team #18592 Golden Prodigies. Used PedroPathing to held program my robot. Now currently planning on using NextFTC, Kotlin and PedroPathing to program my robot."
+            info:
+              content: Head Programmer of the team!
+            featuredItems:
+              customIcons:
+                - icon: /icons/Kotlin.svg
+                  url: https://kotlinlang.org/
+                  tooltip: "Kotlin! The programming language I use for FTC!"
+                - icon: /icons/NextFTC.png
+                  url: https://nextftc.dev/
+                  tooltip: "NextFTC! The command framework that I use!"
+                - icon: /icons/PedroPathing.png
+                  url: https://pedropathing.com/
+                  tooltip: "PedroPathing! The pathfinding library that I use!"
+      - company: "Largo Youth Leadership Council"
+        jobs:
+          - name: "Council Member"
+            date: "January 2022-Present"
+            content: "As a member of the Largo Youth Leadership Council, I represent the teens in my community on the city, state and national level. I have organized with the Largo Youth Leadership Council the Mental Health Festival and acted as representative for my city and my community through Legislative Action Days."
+            info:
+              content: "Council Member!"
+      - company: "Phantom Eyes"
+        jobs:
+          - name: "Inventor"
+            date: "August 2025-Present"
+            content: "Me and Libano, invented Phantom Eyes, a cosplay mask with animatronic eyes!"
+            info:
+              content: "Inventor!"
+
+  # Education
+  education:
+    enable: true
+    # title: "Custom Name"
+    index: false
+    items:
+      - title: "High School"
+        school:
+          name: "Largo High School"
+          url: "https://largo-hs.pcsb.org/"
+        date: "August 2023 - Present"
+        GPA: "Currently 4.2264 out of 5.0"
+        content: |-
+          Attended IB Program!
+          
+          Extracurricular Activities
+            - Team captain of #18592 Golden Prodigies
+            - Treasurer of Rocket Club
+            - Member of Invention Club and working on Phantom Eyes!
+            - President and cofounder of the Coding Club
+        featuredLink:
+          enabled: true
+          url: "https://largo-hs.pcsb.org/"
+
+  # Achievements
+  achievements:
+    enable: true
+    # title: "Custom Name"
+    items:
+      - title: Portfolio Website V2
+        content: This website!
+        url: "https://d4lmwastaken.github.io"
+        image: /images/website.png
+      - title: Portfolio Website
+        content: My original website!
+        url: "https://github.com/D4LMwastaken/D4LMwastaken.github.io/tree/v1"
+        image: /images/old_website.png
+
+  # projects
+  projects:
+    enable: true # Going to be false, once I add this...
+    # title: "Custom Name"
+    items:
+      - title: Portfolio Website V2
+        content: My portfolio website!
+        image: /images/website.png
+        featured:
+          name: Website
+          link: https://d4lmwastaken.github.io
+        badges:
+          - "Hugo"
+          - "Bootstrap"
+          - "Javascript"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/D4LMwastaken/D4LMwastaken.github.io
+
+
+
+  #Contact
+  contact:
+    enable: true
+    # title: "Custom Name"
+    content: Contact me through my email or message me, d4lm. in Discord!
+    btnName: Email me here!
+    btnLink: mailto:jujupan2009@gmail.com
+
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    recentPosts:
+      path: "blogs"
+      count: 3
+      title: Recent Posts
+      enable: false
+      disableFeaturedImage: false
+    socialNetworks:
+      github: https://github.com/D4LMwastaken
+      linkedin: https://www.linkedin.com/in/julian-pan-5a34b7385/?skipRedirect=true
+      instagram: https://www.instagram.com/d4lmwastaken/
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
