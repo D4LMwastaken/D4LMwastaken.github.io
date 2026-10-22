@@ -135,7 +135,7 @@ params:
     intro: "Hi, my name is"
     title: "Julian(D4LM)."
     subtitle: "Welcome to my portfolio website!"
-    content: "I am a high school programmer with expertise in Web Development, Linux and Robotics. I am demonstrating leadership through leading FTC Team #18592 Golden Prodigies, the Largo Youth Leadership Council and more!"
+    content: "I am a high school programmer with expertise in Web Development, Linux, and Robotics. I am demonstrating leadership by leading FTC Team #18592 Golden Prodigies, the Largo Youth Leadership Council and more!"
     image: /images/hero.jpg
     bottomImage:
       enable: true
@@ -163,12 +163,12 @@ params:
     content: |-
       I am a high school student with a passion for Linux, 
 
-      I am currently planning out how I want to lead my FTC Team, #18592 Golden Prodigies as there Team Captain and Head Programmer!
+      I am currently planning out how I want to lead my FTC Team, #18592 Golden Prodigies, as their Team Captain and Head Programmer!
       
       I am currently programming my portfolio [website](https://d4lmwastaken.github.io/)!
     skills:
       enable: true
-      title: "Here are a things I have been playing with:"
+      title: "Here are the things I have been playing with:"
       items:
         - "Fedora"
         - "Hugo"
@@ -190,8 +190,8 @@ params:
         companyUrl: "https://www.lockheedmartin.com/en-us/index.html"
         jobs:
           - name: "Applications Engineer Intern"
-            date: "June 2025-July 2026"
-            content: "I worked as an Application Engineer Intern at Lockheed Martin in Pinellas Park. I helped train and program their artifical intelligence model for segmenting and classifying F-35 Bulkheads to help their workers install tools in correct orientation and position."
+            date: "June 2025-July 2025"
+            content: "I worked as an Application Engineer Intern at Lockheed Martin in Pinellas Park. I helped train and program their artificial intelligence model for segmenting and classifying F-35 Bulkheads to help their workers install tools in correct orientation and position."
             info:
               content: Working as an Applications Engineer Intern
             featuredItems:
@@ -214,7 +214,7 @@ params:
                   tooltip: Golden Prodigies Website
           - name: "Head Programmer"
             date: "August 2024-Present day"
-            content: "Worked as the head programmer for my team #18592 Golden Prodigies. Used PedroPathing to held program my robot. Now currently planning on using NextFTC, Kotlin and PedroPathing to program my robot."
+            content: "Worked as the head programmer for my team #18592 Golden Prodigies. Used PedroPathing to program my robot. Currently planning on using NextFTC, Kotlin, and PedroPathing to program my robot."
             info:
               content: Head Programmer of the team!
             featuredItems:
@@ -262,7 +262,7 @@ params:
             - Team captain of #18592 Golden Prodigies
             - Treasurer of Rocket Club
             - Member of Invention Club and working on Phantom Eyes!
-            - President and cofounder of the Coding Club
+            - President and co-founder of the Coding Club
         featuredLink:
           enabled: true
           url: "https://largo-hs.pcsb.org/"
@@ -295,7 +295,7 @@ params:
         badges:
           - "Hugo"
           - "Bootstrap"
-          - "Javascript"
+          - "JavaScript"
         links:
           - icon: fab fa-github
             url: https://github.com/D4LMwastaken/D4LMwastaken.github.io
@@ -306,7 +306,7 @@ params:
   contact:
     enable: true
     # title: "Custom Name"
-    content: Contact me through my email or message me, d4lm. in Discord!
+    content: Contact me through my email or message me at d4lm. in Discord!
     btnName: Email me here!
     btnLink: mailto:jujupan2009@gmail.com
 
@@ -347,7 +347,7 @@ params:
   # For translations
   terms:
     read: "Read"
-    toc: "Table Of Contents"
+    toc: "Table of Contents"
     copyright: "All rights reserved"
     pageNotFound: "Page not found"
     emailText: "Check out this site"
